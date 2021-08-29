@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;700&display=swap");
+
+* {
+  font-family: "Spartan";
+  font-weight: 700;
+}
+
+#hidden-value {
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  width: 500px;
+}
+
+.screen {
+  background-color: hsl(0, 0%, 93%);
+  border-radius: 10px;
+  width: 100%;
+  min-height: 100px;
+  padding: 1.6vw;
+  margin-bottom: 1.6vw;
+}
+
+.screen span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 38px;
+  text-align: end;
+  line-break: anywhere;
+}
+
+.keypad {
+  padding: 0.8vw;
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 10px;
+}
+
+.keypad .button-container {
+  display: flex;
+}
+
+.keypad .button {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 70px;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  margin: 0.8vw;
+}
+
+.keypad .button:hover {
+  cursor: pointer;
+}
+
+.sm-text span {
+  font-size: 22px;
+}
+
+.keypad .button span {
+  padding-top: 5px;
+}
+
+.cyan {
+  color: #ffffff;
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 4px 0 hsl(185, 58%, 25%);
+}
+
+.orange {
+  color: #ffffff;
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 4px 0 hsl(25, 99%, 27%);
+}
+
+.grayish {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0 4px 0 hsl(35, 11%, 61%);
+}
+
+@media only screen and (max-width: 768px) {
+  .calculator-container {
+    padding: 20px;
+  }
+
+  .screen {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .keypad {
+    padding: 1vw;
+  }
+
+  .keypad .button {
+    min-width: 53px;
+    margin: 2vw;
+  }
+}
